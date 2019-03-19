@@ -1,0 +1,18 @@
+logpath: '/home/badegg/oto/logs'
+logfile_error: 'error.log'
+logfile_debug: 'debug.log'
+cmd_allow:
+  - '^cd *'
+  - '^ls *'
+  - '^cat *'
+  - '^pwd *'
+  - '^ifconfig *'
+  - '^help *'
+cmd_deny:
+  - '^rm'
+  - ' rm '
+  - '\|rm'
+  - '\| rm'
+  - '&rm'
+  - '& rm'
+  - '^vim '
